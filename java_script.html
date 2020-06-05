@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>Java script</title>
+	</head>
+
+		<body>
+		<p>How many fingers am I holding up!</p>
+		<input type="text" id="number">
+		<button id="randomnumbers">Enter!</button>
+		<script type="text/javascript">
+		document.getElementById("randomnumbers").onclick=function(){
+		 var numEntered = document.getElementById("number").value;
+		 var correctNumber = Math.floor(Math.random() * 6);     // returns a random integer from 0 to 9
+		 if(numEntered==correctNumber){
+		 alert("Congrats,You won!")
+		 }else{
+		 alert("Try again,The answers is"+ correctNumber);
+		 }
+		 }
+		</script>
+		</body>
+
+</html>

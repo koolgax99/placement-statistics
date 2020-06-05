@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+		<title>jQuery2</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+			<style>
+			#circle{
+			background-color:green;
+			height:200px;
+			width:200px;
+			border-radius:50%;
+			}
+			img{
+			height:100px;
+			width:100px;
+			border-radius:50%
+}
+			</style>
+	</head>
+
+			<body>
+			<img src="akash.jpeg"/>
+			<script type="text/javascript">
+			$("img").click(function(){
+			$(this).animate({width:"400px",height:"400px"},2000);			
+			})
+			
+			</script>
+
+			</body>
+
+</html>
